@@ -34,7 +34,7 @@ function LoginTest({ setIsLoggedIn, isLoggedIn }) {
     const loginUser = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('quoizapi.vercel.app/login', {
+            const response = await axios.post('https://quoizback2.onrender.com/login', {
                 email: data.email,
                 password: data.password
             });
