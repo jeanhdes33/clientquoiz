@@ -32,7 +32,7 @@ function Football() {
 
   const fetchFootballQuestion = async () => {
     try {
-      const response = await axios.get('hhttps://quoizback2.onrender.com/questions/football/random');
+      const response = await axios.get('https://quoizback2.onrender.com/questions/football/random');
       const newQuestion = response.data;
 
       // Vérifie si la nouvelle question est déjà dans la liste des questions posées
